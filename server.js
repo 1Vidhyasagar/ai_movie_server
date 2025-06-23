@@ -20,7 +20,7 @@ app.post("/api/suggest", async (req, res) => {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "anthropic/claude-3-haiku",
+        model: "mistralai/mistral-7b-instruct",
         messages: [
           {
             role: "user",
